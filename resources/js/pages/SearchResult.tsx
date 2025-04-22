@@ -1,6 +1,18 @@
 import { Head } from '@inertiajs/react';
+interface Manga {
+    id: string;
+    title: string;
+    description?: string;
+    cover_url?: string;
+}
 
-export default function SearchResult({ title = '', results = [], error }: any) {
+// Then use it in your props
+interface SearchResultProps {
+    title?: string;
+    results?: Manga[];
+    error?: string;
+}
+export default function SearchResult({ title = '', results = [], error = '' }: SearchResultProps) {
     return (
         <>
             <Head title={`Search results for "${title}"`} />
@@ -12,7 +24,7 @@ export default function SearchResult({ title = '', results = [], error }: any) {
 
                 {results.length > 0 ? (
                     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                        {results.map((manga: any) => (
+                        {results.map((manga: Manga) => (
                             <div key={manga.id} className="rounded border p-2 shadow transition hover:shadow-md">
                                 {manga.cover_url ? (
                                     <img
