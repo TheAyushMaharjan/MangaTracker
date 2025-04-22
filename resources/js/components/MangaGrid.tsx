@@ -7,14 +7,14 @@ const SAMPLE_MANGA = [
     {
         id: '1',
         title: 'One Piece',
-        coverImage: 'https://images.unsplash.com/photo-1630710478635-382f8ced3b28?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
         status: 'reading' as const,
         rating: 5,
     },
     {
         id: '2',
         title: 'Chainsaw Man',
-        coverImage: 'https://images.unsplash.com/photo-1678831494263-1bafe4b3c2e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
         status: 'completed' as const,
         rating: 4,
     },
@@ -28,23 +28,9 @@ const SAMPLE_MANGA = [
     {
         id: '4',
         title: 'Demon Slayer',
-        coverImage: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+        coverImage: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
         status: null,
         rating: 0,
-    },
-    {
-        id: '5',
-        title: 'Attack on Titan',
-        coverImage: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        status: 'completed' as const,
-        rating: 5,
-    },
-    {
-        id: '6',
-        title: 'Berserk',
-        coverImage: 'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        status: 'dropped' as const,
-        rating: 3,
     },
 ];
 

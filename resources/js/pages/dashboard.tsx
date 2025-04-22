@@ -15,8 +15,8 @@ const breadcrumbs: BreadcrumbItem[] = [
     },
 ];
 
-export default function Dashboard({ results = [], error }: { results?: any[]; error?: string }) {
-    const [search, setSearch] = useState('');
+export default function Dashboard() {
+    const [search, setSearch] = useState<string>('');
 
     const handleSearchSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -24,7 +24,6 @@ export default function Dashboard({ results = [], error }: { results?: any[]; er
             router.visit(`/search/${encodeURIComponent(search)}`);
         }
     };
-
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
